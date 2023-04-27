@@ -12,6 +12,9 @@ public class testFiguras {
 		Rombo x1 = new Rombo("Rombo x1", 5, 7, 4 );
 		Rombo x2 = new Rombo("Rombi", 3, 4, 2);
 		
+		Romboide y1 = new Romboide("Romboide x1", 5, 7);
+		Romboide y2 = new Romboide("Rombois", 3, 4);
+		
 		// TODO: Aquí se deben instanciar las otras figuras geométricas
 
 		imprimirCalculo(t1);
@@ -25,6 +28,9 @@ public class testFiguras {
 		
 		imprimirCalculo(x1);
 		imprimirCalculo(x2);
+		
+		imprimirCalculo(y1);
+		imprimirCalculo(y2);
 
 		// TODO: Aquí se debe probar cada figura con el método imprimirCalculo
 		
