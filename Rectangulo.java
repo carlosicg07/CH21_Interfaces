@@ -1,22 +1,24 @@
-public class Triangulo implements Calculadora{
+
+public class Rectangulo implements Calculadora {
 	private String name;
 	private double base;
 	private double altura;
-	private double lado;
-	public Triangulo(String name, double base, double altura, double lado) {
+	
+	
+	public Rectangulo(String name, double base, double altura) {
+		super();
 		this.name = name;
 		this.base = base;
 		this.altura = altura;
-		this.lado = lado;
-	}//Constructor
-	
+	}//constructor
+
 	public double calcularArea() {
-		return (getBase() * getAltura())/2;	
+		return (getBase()*getAltura());
 	}//calcularArea
 	public double calcularPerimetro() {
-		return (getLado() + getLado() + getLado());
-	}// calcularPerimetro
-		
+		return ((2*getBase()) + (2*getAltura()));
+	}//calcularPerimetro
+	
 	public String getName() {
 		return name;
 	}//getName
@@ -35,17 +37,11 @@ public class Triangulo implements Calculadora{
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}//setAltura
-	public double getLado() {
-		return lado;
-	}//getLado
-	public void setLado(double lado) {
-		this.lado = lado;
-	}//setLado
-	
-	
+
+
 	@Override
 	public String toString() {
-		return "Triángulo [name=" + name + ", base=" + base + ", altura=" + altura + ", lado=" + lado + "]";
+		return "Rectangulo [name=" + name + ", base=" + base + ", altura=" + altura + "]";
 	}//toString
 	
-}//class Triangulo
+}//class Rectangulo
